@@ -1,0 +1,71 @@
+meta: 
+    author: 'Rhys Thomas'
+    name: 'Zircaloy-4 with hydrides'
+    url: 'doi:10.5281/zenodo.8383311/Archive.zip'
+    hash: fdea9aff50d0d2bb596c3b70c53620aadfc8dee9f31e3cddca0420931ecce235
+    zipped: true
+experiments:
+    zr4:
+        dic: [data/SetA_001.TXT, data/SetA_002.TXT, data/SetA_003.TXT]
+        dic_crop_left: 100
+        dic_crop_right: 100
+        dic_crop_top: 100
+        dic_crop_bottom: 100
+        dic_min_grain_size: 26
+        dic_scale: 0.0048828125
+        dic_homog:
+        - [39, 151]
+        - [1061, 848]
+        - [796, 188]
+        - [127, 851]
+        - [181, 520]
+        - [1200, 60]
+        - [916, 160]
+        - [878, 284]
+        - [804, 507]
+        - [353, 991]
+        - [885, 985]
+        - [5, 6]
+        - [0, 0]
+        - [45, 1009]
+        - [0, 1053]
+        - [693, 986]
+        - [1225, 996]
+        - [1216, 7]
+        - [1229, 0]
+        - [273, 2]
+        - [1229, 1053]
+        - [501, 148]
+        - [555, 653]
+        ebsd: data/EBSD
+        ebsd_type: OxfordBinary
+        ebsd_rotate: false
+        ebsd_boundary_tolerance: 4
+        ebsd_min_grain_size: 20
+        pattern: SetA_opt.jpg
+        pattern_scale: 4
+        ebsd_homog:
+        - [133, 186]
+        - [897, 655]
+        - [710, 228]
+        - [178, 638]
+        - [233, 425]
+        - [1031, 155]
+        - [807, 209]
+        - [778, 290]
+        - [711, 430]
+        - [346, 734]
+        - [757, 745]
+        - [111, 94]
+        - [106, 88]
+        - [111, 747]
+        - [76, 766]
+        - [609, 739]
+        - [1017, 759]
+        - [1046, 122]
+        - [1054, 115]
+        - [319, 95]
+        - [1020, 790]
+        - [490, 194]
+        - [514, 524]                    
+        transform_type: piecewise_affine

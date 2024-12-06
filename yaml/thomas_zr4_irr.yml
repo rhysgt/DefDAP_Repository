@@ -1,0 +1,183 @@
+meta: 
+    author: 'Rhys Thomas'
+    name: 'Zircaloy-4 0.1 dpa irradiated'
+    url: 'doi:10.5281/zenodo.5566868/Zr4_0.1dpa_R_T.zip'
+    hash: 92299995947c17520263b932ec8ffe77c9e33c4d8582eec3a328b564ea9e9ca5
+    zipped: true
+experiments:
+    rd_irr:
+        dic: Zr4_0.1dpa_R_T/RD/irr_*.TXT
+        dic_crop_left: 37
+        dic_crop_right: 36
+        dic_crop_top: 21
+        dic_crop_bottom: 22
+        dic_min_grain_size: 100
+        dic_scale: 0.0048828125
+        dic_homog:
+        - [664, 1563]
+        - [648, 1723]
+        - [192, 1447]
+        - [96, 1829]
+        - [686, 357]
+        - [234, 151]
+        - [2096, 559]
+        - [1218, 29]
+        - [1232, 339]
+        - [2143, 137]
+        - [348, 1302]
+        - [717, 885]
+        - [880, 944]
+        - [1162, 1207]
+        - [2063, 1217]
+        - [1463, 1835]
+        - [2142, 1783]
+        ebsd: Zr4_0.1dpa_R_T/RD/Zr4_R_irr
+        ebsd_type: OxfordBinary
+        ebsd_rotate: false
+        ebsd_boundary_tolerance: 3.6
+        ebsd_min_grain_size: 100
+        pattern: i_scale8.bmp
+        pattern_scale: 2
+        ebsd_homog:
+        - [382, 810]
+        - [377, 865]
+        - [206, 769]
+        - [169, 901]
+        - [388, 393]
+        - [218, 323]
+        - [917, 461]
+        - [586, 281]
+        - [593, 385]
+        - [932, 315]
+        - [265, 721]
+        - [401, 576]
+        - [462, 597]
+        - [568, 687]
+        - [906, 689]
+        - [685, 903]
+        - [938, 885]
+        transform_type: affine
+    td_irr:
+        dic: Zr4_0.1dpa_R_T/TD/irr_*.TXT
+        dic_crop_left: 35
+        dic_crop_right: 37
+        dic_crop_top: 14
+        dic_crop_bottom: 16
+        dic_min_grain_size: 100
+        dic_scale: 0.0048828125
+        dic_homog:
+        - [1542, 1581]
+        - [1448, 1809]
+        - [68, 1790]
+        - [1714, 814]
+        - [1962, 1790]
+        - [2175, 1890]
+        - [1965, 267]
+        - [164, 1179]
+        - [358, 265]
+        - [990, 358]
+        - [1030, 680]
+        ebsd: Zr4_0.1dpa_R_T/TD/Zr4_T_irr
+        ebsd_type: OxfordBinary
+        ebsd_rotate: true
+        ebsd_boundary_tolerance: 3.6
+        ebsd_min_grain_size: 100
+        pattern: i_8scale.bmp
+        pattern_scale: 2
+        ebsd_homog:
+        - [700, 776]
+        - [665, 848]
+        - [154, 856]
+        - [761, 530]
+        - [856, 837]
+        - [937, 865]
+        - [851, 352]
+        - [186, 661]
+        - [255, 366]
+        - [491, 392]
+        - [504, 493]
+        transform_type: affine
+    rd_nirr:
+        dic: Zr4_0.1dpa_R_T/RD/nirr_*.TXT
+        dic_crop_left: 40
+        dic_crop_right: 35
+        dic_crop_top: 70
+        dic_crop_bottom: 5
+        dic_min_grain_size: 100
+        dic_scale: 0.0048828125
+        dic_homog:
+        - [2196, 1304]
+        - [1708, 1606]
+        - [1594, 1800]
+        - [269, 1560]
+        - [912, 1492]
+        - [1726, 760]
+        - [1540, 120]
+        - [654, 1008]
+        - [574, 1202]
+        - [1138, 655]
+        - [940, 479]
+        - [698, 244]
+        - [396, 203]
+        - [104, 932]
+        - [2157, 815]
+        - [2014, 531]
+        ebsd: Zr4_0.1dpa_R_T/RD/Zr4_R_nirr
+        ebsd_type: OxfordBinary
+        ebsd_rotate: false
+        ebsd_boundary_tolerance: 3.6
+        ebsd_min_grain_size: 100
+        pattern: ni_scale8.bmp
+        pattern_scale: 2
+        ebsd_homog:
+        - [951, 779]
+        - [769, 881]
+        - [727, 948]
+        - [229, 862]
+        - [470, 841]
+        - [773, 592]
+        - [704, 375]
+        - [373, 676]
+        - [342, 742]
+        - [553, 556]
+        - [479, 497]
+        - [385, 418]
+        - [274, 404]
+        - [164, 651]
+        - [934, 611]
+        - [881, 515]
+        transform_type: affine
+    td_nirr:
+        dic: Zr4_0.1dpa_R_T/TD/nirr_*.TXT
+        dic_crop_left: 30
+        dic_crop_right: 35
+        dic_crop_top: 5
+        dic_crop_bottom: 5
+        dic_min_grain_size: 100
+        dic_scale: 0.0048828125
+        dic_homog:
+        - [480, 1523]
+        - [994, 1002]
+        - [387, 64]
+        - [2214, 960]
+        - [314, 1807]
+        - [740, 1082]
+        - [1943, 1768]
+        - [1688, 162]
+        ebsd: Zr4_0.1dpa_R_T/TD/Zr4_T_nirr
+        ebsd_type: OxfordBinary
+        ebsd_rotate: true
+        ebsd_boundary_tolerance: 3.6
+        ebsd_min_grain_size: 100
+        pattern: ni_8scale.bmp
+        pattern_scale: 2
+        ebsd_homog:
+        - [336, 619]
+        - [525, 449]
+        - [295, 158]
+        - [982, 424]
+        - [275, 712]
+        - [432, 478]
+        - [885, 682]
+        - [784, 180]
+        transform_type: affine
