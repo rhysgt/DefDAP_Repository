@@ -13,7 +13,7 @@ def printYamls(folder):
         with open(file, 'r') as infile:
             data = yaml.load(infile, Loader=yaml.Loader)
     
-            print('{:15} | {:30} | \033[1m {:30} \033[0m'.format(data['meta']['author'], data['meta']['name'], file))
+            print('{:15} | {:45} | \033[1m {:30} \033[0m'.format(data['meta']['author'], data['meta']['name'], file))
             
 def loadData(yaml_file, key=None):
     
@@ -80,8 +80,10 @@ def loadData(yaml_file, key=None):
     
     # Homologous points
     dic_map = exp.increments[0].maps['hrdic']
-    dic_map.frame.homog_points = items['dic_homog']
-    ebsd_map.frame.homog_points = items['ebsd_homog']
+    
+    if 'dic_homog' in items:
+        dic_map.frame.homog_points = items['dic_homog']
+        ebsd_map.frame.homog_points = items['ebsd_homog']
     
     # Generate grain boundaries and grains
     ebsd_map.data.generate('grain_boundaries', misori_tol=items['ebsd_boundary_tolerance'])
@@ -90,15 +92,16 @@ def loadData(yaml_file, key=None):
     
     
     for inc, dic_map in exp.iter_over_maps('hrdic'):
-        dic_map.set_pattern(items['pattern'], items['pattern_scale'])
+        if 'pattern' in items:
+            dic_map.set_pattern(items['pattern'], items['pattern_scale'])
         dic_map.set_crop(left = items['dic_crop_left'], 
                    right = items['dic_crop_right'],
                   top = items['dic_crop_top'],
                   bottom = items['dic_crop_bottom'])
         dic_map.set_scale(items['dic_scale'])
-    
-        dic_map.link_ebsd_map(ebsd_map, transform_type = items['transform_type'])
-    
-        dic_map.data.generate('grains', min_grain_size=items['dic_min_grain_size'])
+
+        if 'dic_homog' in items:
+            dic_map.link_ebsd_map(ebsd_map, transform_type = items['transform_type'])
+            dic_map.data.generate('grains', min_grain_size=items['dic_min_grain_size'])
 
     return exp

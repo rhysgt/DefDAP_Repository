@@ -1,0 +1,25 @@
+meta: 
+    author: 'Allan Harte'
+    name: 'Ni alloy with no gamma prime precipitates'
+    url: 'doi:10.5281/zenodo.3691936/NiAlloyDefData_ss.zip'
+    hash: 03d86e8062b8c4d81ce4c564fd0d3324e50f80df71d45e43aff43512da2bc19d
+    zipped: true
+experiments:
+    ni:
+        dic: NiAlloyDefData_ss/Data/Hrdic/part*.txt
+        dic_crop_left: 100
+        dic_crop_right: 100
+        dic_crop_top: 100
+        dic_crop_bottom: 100
+        dic_min_grain_size: 26
+        dic_scale: 0.0048828125
+        #dic_homog: None
+        ebsd: NiAlloyDefData_ss/Data/Ebsd/a690
+        ebsd_type: OxfordBinary
+        ebsd_rotate: false
+        ebsd_boundary_tolerance: 4
+        ebsd_min_grain_size: 20
+        #pattern: None
+        pattern_scale: 4
+        #ebsd_homog: None                   
+        transform_type: affine
