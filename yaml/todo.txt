@@ -1,9 +1,5 @@
 TODO:
 
-Rhys
-    https://zenodo.org/records/5566869
-    https://zenodo.org/records/14245480
-
 Ben
     https://doi.org/10.14468/dgzy-j018
     https://doi.org/10.14468/37vm-ya51

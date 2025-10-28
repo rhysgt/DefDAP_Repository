@@ -1,0 +1,79 @@
+meta: 
+    author: 'Sheng Cao'
+    name: 'Ti bulk and keyhole defect'
+    url: 'doi:10.5281/zenodo.14245479/Defect DefDAP.zip'
+    hash: 11b01bbab6dd70088f00d2fb8b5f4f2a03f91466634d290495bd6f35022ae226
+    zipped: true
+experiments:
+    pore:
+        dic: Defect DefDAP/SLM_Ti64/Pore/B*.txt
+        dic_crop_left: 140
+        dic_crop_right: 150
+        dic_crop_top: 90
+        dic_crop_bottom: 225
+        dic_min_grain_size: 40
+        dic_scale: 0.01464844
+        dic_homog:
+        - [108, 128]
+        - [327, 65]
+        - [456, 17]
+        - [538, 39]
+        - [144, 483]
+        - [59, 380]
+        - [276, 553]
+        - [674, 577]
+        ebsd: Defect DefDAP/SLM_Ti64/Pore/ebsd
+        ebsd_type: OxfordBinary
+        ebsd_rotate: false
+        ebsd_boundary_tolerance: 5
+        ebsd_min_grain_size: 40
+        pattern: pattern.png
+        pattern_scale: 2
+        ebsd_homog:
+        - [74, 71]
+        - [159, 60]
+        - [204, 31]
+        - [238, 41]
+        - [81, 176]
+        - [50, 147]
+        - [136, 220]
+        - [293, 235]
+        transform_type: affine
+    bulk:
+        dic: Defect DefDAP/SLM_Ti64/Bulk/B*.txt
+        dic_crop_left: 210
+        dic_crop_right: 350
+        dic_crop_top: 230
+        dic_crop_bottom: 200
+        dic_min_grain_size: 40
+        dic_scale: 0.01464844
+        dic_homog:
+        - [862, 729]
+        - [170, 782]
+        - [477, 1616]
+        - [617, 6]
+        - [1738, 336]
+        - [1974, 1068]
+        - [0, 0]
+        - [0, 1672]
+        - [2157, 0]
+        - [2157, 1672]
+        ebsd: Defect DefDAP/SLM_Ti64/Bulk/ebsd
+        ebsd_type: OxfordBinary
+        ebsd_rotate: true
+        ebsd_boundary_tolerance: 5
+        ebsd_min_grain_size: 40
+        pattern: pattern.png
+        pattern_scale: 2
+        ebsd_homog:
+        - [742, 647]
+        - [154, 697]
+        - [421, 1394]
+        - [525, 51]
+        - [1476, 310]
+        - [1691, 971]
+        - [-20, 29]
+        - [49, 1400]
+        - [1841, 24]
+        - [1872, 1443]
+        transform_type: piecewise_affine
