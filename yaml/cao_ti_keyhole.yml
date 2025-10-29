@@ -63,7 +63,6 @@ experiments:
         ebsd_rotate: true
         ebsd_boundary_tolerance: 5
         ebsd_min_grain_size: 40
-        pattern: pattern.png
         pattern_scale: 2
         ebsd_homog:
         - [742, 647]
